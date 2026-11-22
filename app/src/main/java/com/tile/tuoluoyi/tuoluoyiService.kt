@@ -254,7 +254,7 @@ class tuoluoyiService : AccessibilityService() {
 
 
                                                             val isDown: Boolean =
-                                                                messageType == NOTE_ON
+                                                                (messageType == NOTE_ON) && (velocity > 0)
 
 //                                                    if (messageType == NOTE_ON) {
 //                                                        isDown = true
